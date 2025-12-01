@@ -2,14 +2,20 @@
 
 int main(void)
 {
-    char lower[] = "abcdefghijklmnopqrstuvwxyz";
-    char upper[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    char lower = 'a';
+    char upper = 'A';
 
-    for (int i = 0; lower[i] != '\0'; i++)
-        putchar(lower[i]);
+    while (lower <= 'z')
+    {
+        putchar(lower);
+        lower++;
+    }
 
-    for (int i = 0; upper[i] != '\0'; i++)
-        putchar(upper[i]);
+    while (upper <= 'Z')
+    {
+        putchar(upper);
+        upper++;
+    }
 
     putchar('\n');
 
