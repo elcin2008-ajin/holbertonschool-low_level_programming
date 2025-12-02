@@ -2,7 +2,7 @@
 
 /**
  * print_last_digit - prints the last digit of a number
- * @n: the number to extract last digit from
+ * @n: number to extract last digit from
  *
  * Return: value of the last digit
  */
@@ -10,10 +10,10 @@ int print_last_digit(int n)
 {
     int last;
 
-    if (n < 0)
-        n = -n;
+    last = n % 10;       /* Son rəqəmi al */
+    if (last < 0)
+        last = -last;    /* Müsbət et */
 
-    last = n % 10;
     _putchar(last + '0');
 
     return (last);
