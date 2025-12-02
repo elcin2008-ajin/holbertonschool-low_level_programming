@@ -3,6 +3,6 @@
 
 int _putchar(char c);
 void jack_bauer(void);
-/* digər funksiyaların prototipləri buraya */
+/* digər funksiyaların prototipləri */
 
 #endif /* MAIN_H */
