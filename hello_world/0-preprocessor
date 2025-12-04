@@ -1,0 +1,4 @@
+#!/bin/bash
+# 0-preprocessor: preprocess a C file and save output to 'c'
+
+gcc -E "$CFILE" -o c
