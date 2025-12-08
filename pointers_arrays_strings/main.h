@@ -1,6 +1,14 @@
-#ifndef MAIN_H
-#define MAIN_H
+#include "main.h"
+#include <stdio.h>
 
-void reset_to_98(int *n);
+int main(void)
+{
+    int a = 98;
+    int b = 42;
 
-#endif
+    printf("a=%d, b=%d\n", a, b);
+    swap_int(&a, &b);
+    printf("a=%d, b=%d\n", a, b);
+
+    return 0;
+}
