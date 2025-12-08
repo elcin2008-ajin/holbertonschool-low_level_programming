@@ -1,11 +1,21 @@
 #include "main.h"
 
 /**
- * reset_to_98 - takes a pointer to an int and updates
- * the value it points to to 98
- * @n: pointer to the int to update
+ * main - prints _putchar followed by a new line
+ *
+ * Return: Always 0
  */
-void reset_to_98(int *n)
+int main(void)
 {
-*n = 98;
+	char *str = "_putchar";
+	int i = 0;
+
+	while (str[i] != '\0')
+	{
+		_putchar(str[i]);
+		i++;
+	}
+	_putchar('\n');
+
+	return (0);
 }
