@@ -9,7 +9,7 @@ void swap_int(int *a, int *b)
 {
     int temp;
 
-    temp = *a;  // a-nın dəyərini müvəqqəti saxla
-    *a = *b;    // b-nin dəyərini a-ya qoy
-    *b = temp;  // müvəqqəti dəyəri b-ə qoy
+    temp = *a;  /*  a-nın dəyərini müvəqqəti saxla */
+    *a = *b;    /* b-nin dəyərini a-ya qoy */
+    *b = temp;  /*  müvəqqəti dəyəri b-ə qoy */
 }
