@@ -1,15 +1,15 @@
 #include "main.h"
 
 /**
- * swap_int - swaps the values of two integers
- * @a: pointer to first integer
- * @b: pointer to second integer
+ * swap_int - iki ədədin dəyərlərini dəyişir
+ * @a: birinci ədəd
+ * @b: ikinci ədəd
  */
 void swap_int(int *a, int *b)
 {
     int temp;
 
-    temp = *a;  /*  a-nın dəyərini müvəqqəti saxla */
+    temp = *a;  /* a-nın dəyərini müvəqqəti saxla */
     *a = *b;    /* b-nin dəyərini a-ya qoy */
-    *b = temp;  /*  müvəqqəti dəyəri b-ə qoy */
+    *b = temp;  /* temp-də saxlanmış a-nın dəyərini b-ya qoy */
 }
