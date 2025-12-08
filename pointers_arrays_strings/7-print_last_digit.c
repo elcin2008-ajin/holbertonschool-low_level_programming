@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * print_last_digit - prints the last digit of a number
- * @n: the number to process
+ * print_last_digit - çap edir bir rəqəmin son rəqəmini
+ * @n: rəqəm
  *
- * Return: value of the last digit
+ * Return: son rəqəm
  */
 int print_last_digit(int n)
 {
@@ -12,10 +12,7 @@ int print_last_digit(int n)
 
 	if (n < 0)
 		n = -n;
-
 	last = n % 10;
-
 	_putchar('0' + last);
-
 	return (last);
 }
