@@ -1,14 +1,9 @@
-#include "main.h"
-#include <stdio.h>
+#ifndef MAIN_H
+#define MAIN_H
 
-int main(void)
-{
-    int a = 98;
-    int b = 42;
+/* buraya prototiplər gəlir */
+void swap_int(int *a, int *b);
+void reset_to_98(int *n);
+int _putchar(char c);
 
-    printf("a=%d, b=%d\n", a, b);
-    swap_int(&a, &b);
-    printf("a=%d, b=%d\n", a, b);
-
-    return 0;
-}
+#endif /* MAIN_H */
