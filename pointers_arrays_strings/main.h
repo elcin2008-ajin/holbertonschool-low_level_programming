@@ -1,34 +1,37 @@
 #ifndef MAIN_H
 #define MAIN_H
 
-/* 0. Takes a pointer to an int and updates the value it points to 98 */
+#include <stdio.h>
+#include <stdlib.h>
+
+/* 0-reset_to_98.c */
 void reset_to_98(int *n);
 
-/* 1. Swaps the values of two integers */
+/* 1-swap.c */
 void swap_int(int *a, int *b);
 
-/* 2. Returns the length of a string */
+/* 2-strlen.c */
 int _strlen(char *s);
 
-/* 3. Prints a string, followed by a new line */
+/* 3-puts.c */
 void _puts(char *str);
 
-/* 4. Prints a string in reverse, followed by a new line */
+/* 4-print_rev.c */
 void print_rev(char *s);
 
-/* 5. Reverses a string */
+/* 5-rev_string.c */
 void rev_string(char *s);
 
-/* 6. Prints every other character of a string, starting with the first character */
+/* 6-puts2.c */
 void puts2(char *str);
 
-/* 7. Prints half of a string */
+/* 7-puts_half.c */
 void puts_half(char *str);
 
-/* 8. Prints n elements of an array of integers */
+/* 8-print_array.c */
 void print_array(int *a, int n);
 
-/* Provided _putchar function declaration */
-int _putchar(char c);
+/* 9-strcpy.c */
+char *_strcpy(char *dest, char *src);
 
 #endif /* MAIN_H */
