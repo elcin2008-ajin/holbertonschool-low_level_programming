@@ -1,9 +1,9 @@
 #ifndef MAIN_H
 #define MAIN_H
 
-/* buraya prototiplər gəlir */
-void swap_int(int *a, int *b);
-void reset_to_98(int *n);
 int _putchar(char c);
+void reset_to_98(int *n);
+void swap_int(int *a, int *b);
+int _strlen(char *s);  /* <-- bu sətri əlavə et */
 
-#endif /* MAIN_H */
+#endif
