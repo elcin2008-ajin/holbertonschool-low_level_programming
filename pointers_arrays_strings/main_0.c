@@ -1,18 +1,11 @@
 #include "main.h"
 
-/**
- * main - proqramı yoxlayır
- *
- * Return: 0
- */
 int main(void)
 {
-	int r;
+    print_last_digit(98);
+    print_last_digit(0);
+    print_last_digit(-1024);
+    _putchar('\n');
 
-	r = print_last_digit(98);
-	r = print_last_digit(0);
-	r = print_last_digit(-1024);
-	_putchar('\n');
-
-	return (0);
+    return (0);
 }
