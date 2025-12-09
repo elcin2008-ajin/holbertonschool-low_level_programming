@@ -24,4 +24,7 @@ char *string_toupper(char *s);
 /* _putchar prototype */
 int _putchar(char c);
 
+/* Task 6: capitalizes all words of a string */
+char *cap_string(char *s)
+
 #endif /* MAIN_H */
