@@ -1,23 +1,21 @@
 #include "main.h"
+
 /**
  * cap_string - capitalizes all words of a string
- * @n: input value
+ * @s: string to capitalize
  *
- *
- * Return: string
+ * Return: pointer to s
  */
-char *cap_string(char *n)
+char *cap_string(char *s)
 {
 	int i;
 
-	i = 0;
-	if (n[0] >= 'a' && n[0] <= 'z')
+	if (s[0] >= 'a' && s[0] <= 'z')
+		s[0] = s[0] - 'a' + 'A';
+
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		n[0] = n[0] - 32;
-	}
-	for (i = 0; n[i] != '\0'; i++)
-	{
-		switch (n[i])
+		switch (s[i])
 		{
 			case ',':
 			case ';':
@@ -32,11 +30,10 @@ char *cap_string(char *n)
 			case ' ':
 			case '\n':
 			case '\t':
-				if (n[i + 1] > 96 && n[i + 1] < 123)
-				{
-					n[i + 1] = n[i + 1] - 32;
-				}
+				if (s[i + 1] >= 'a' && s[i + 1] <= 'z')
+					s[i + 1] = s[i + 1] - 'a' + 'A';
+				break;
 		}
 	}
-	return (n);
+	return (s);
 }
