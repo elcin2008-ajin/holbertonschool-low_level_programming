@@ -15,6 +15,9 @@ char *_strncpy(char *dest, char *src, int n);
 /* Task 3: compares two strings */
 int _strcmp(char *s1, char *s2);
 
+/* Task 4: reverses the content of an array of integers */
+void reverse_array(int *a, int n);
+
 /* _putchar prototype */
 int _putchar(char c);
 
