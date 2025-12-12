@@ -1,17 +1,7 @@
 #ifndef MAIN_H
 #define MAIN_H
 
-/* Prototypes for string and array functions */
-char *_strcat(char *dest, char *src);
-char *_strncat(char *dest, char *src, int n);
-char *_strncpy(char *dest, char *src, int n);
-int _strcmp(char *s1, char *s2);
-void reverse_array(int *a, int n);
-char *string_toupper(char *s);
-char *cap_string(char *s);
-char *leet(char *s);
-
-/* Prototype for _putchar function */
+char *_memset(char *s, char b, unsigned int n);
 int _putchar(char c);
 
-#endif /* MAIN_H */
+#endif
