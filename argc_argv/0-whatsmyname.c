@@ -2,9 +2,9 @@
 
 int main(int argc, char *argv[])
 {
-    (void)argc; /* unused warning aradan qaldırmaq üçün */
+(void)argc; /* unused warning */
 
-    printf("%s\n", argv[0]);
+printf("%s\n", argv[0]);
 
-    return (0);
+return (0);
 }
