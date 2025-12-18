@@ -1,19 +1,19 @@
 #include <stdio.h>
 
 /**
- * main - prints the name of the program
- * @argc: number of arguments
- * @argv: array of arguments
+ * main - Prints the name of the program
+ * @argc: Number of arguments passed to the program
+ * @argv: Array of pointers to the arguments
  *
- * Description: This program prints its own name, as called
- * on the command line, followed by a new line.
- * If renamed, it prints the new name without recompiling.
+ * Description: Prints the exact name used to call the program,
+ * including the path, followed by a new line. If the program is renamed,
+ * it will print the new name without recompilation.
  *
  * Return: 0 on success
  */
 int main(int argc, char *argv[])
 {
-    (void)argc; /* unused variable */
+    (void)argc; /* Unused parameter */
 
     printf("%s\n", argv[0]);
 
