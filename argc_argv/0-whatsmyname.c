@@ -13,7 +13,7 @@
  */
 int main(int argc, char *argv[])
 {
-    (void)argc;
+    (void)argc; /* unused variable */
 
     printf("%s\n", argv[0]);
 
