@@ -17,4 +17,7 @@ struct dog
 /* typedef for struct dog */
 typedef struct dog dog_t;
 
+/* Prototype of new_dog function */
+dog_t *new_dog(char *name, float age, char *owner);
+
 #endif /* DOG_H */
