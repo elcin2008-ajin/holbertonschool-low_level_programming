@@ -18,15 +18,9 @@ int (*get_op_func(char *s))(int, int)
     };
     int i = 0;
 
-    if (s)
-    {
-        while (ops[i].op)
-        {
-            if (strcmp(s, ops[i].op) == 0)
-                return (ops[i].f);
+    if (s)  /* yalnız 1 if istifadə olunur */
+        while (ops[i].op && strcmp(s, ops[i].op) != 0)
             i++;
-        }
-    }
 
-    return (NULL);
+    return (ops[i].op ? ops[i].f : NULL);
 }
