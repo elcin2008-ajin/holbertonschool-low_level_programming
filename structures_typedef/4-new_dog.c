@@ -1,7 +1,12 @@
 #include <stdlib.h>
 #include "dog.h"
 
-/* compute string length without strlen */
+/**
+ * _strlen - returns the length of a string
+ * @s: input string
+ *
+ * Return: length of string
+ */
 int _strlen(char *s)
 {
 	int len = 0;
@@ -11,7 +16,13 @@ int _strlen(char *s)
 	return (len);
 }
 
-/* copy string without strcpy */
+/**
+ * _strcpy - copies a string from src to dest
+ * @dest: destination buffer
+ * @src: source string
+ *
+ * Return: pointer to dest
+ */
 char *_strcpy(char *dest, char *src)
 {
 	int i = 0;
