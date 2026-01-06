@@ -1,18 +1,21 @@
-#ifndef VARIADIC_FUNCTIONS_H
-#define VARIADIC_FUNCTIONS_H
+#ifndef VARIADIC_FUNCTION_
+#define VARIADIC_FUNCTION_
+#define FORMAT(f) ("%"#f)
+/**
+ * struct print_form - Define a struct to figure out how to print
+ * @c: Character to check for
+ * @f: Pointer to function to call
+ */
+typedef struct print_form
+{
+	char *c;
+	void (*f)();
+} print_form_t;
 
-#include <stdarg.h>
-
-/* 0. sum_them_all - returns the sum of all its parameters */
+int _putchar(char c);
 int sum_them_all(const unsigned int n, ...);
-
-/* 1. print_numbers - prints numbers, followed by a new line */
 void print_numbers(const char *separator, const unsigned int n, ...);
-
-/* 2. print_strings - prints strings, followed by a new line */
 void print_strings(const char *separator, const unsigned int n, ...);
-
-/* 3. print_all - prints anything, followed by a new line */
 void print_all(const char * const format, ...);
 
-#endif /* VARIADIC_FUNCTIONS_H */
+#endif
