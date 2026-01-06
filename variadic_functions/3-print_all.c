@@ -10,8 +10,8 @@ void print_all(const char * const format, ...)
 {
 	va_list args;
 	unsigned int i = 0;
-	char *sep = "";
 	char *str;
+	char *sep = "";
 
 	va_start(args, format);
 
@@ -30,7 +30,7 @@ void print_all(const char * const format, ...)
 				break;
 			case 's':
 				str = va_arg(args, char *);
-				if (str == NULL)
+				if (str == NULL)            /* burada 1 if istifadə olunur */
 					printf("%s(nil)", sep);
 				else
 					printf("%s%s", sep, str);
