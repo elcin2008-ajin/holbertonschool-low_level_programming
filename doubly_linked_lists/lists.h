@@ -5,28 +5,7 @@
 #include <stdlib.h>
 
 /**
- * struct list_s - singly linked list
- * @str: string
- * @len: length of the string
- * @next: points to the next node
- *
- * Description: singly linked list node structure
- */
-typedef struct list_s
-{
-	char *str;
-	unsigned int len;
-	struct list_s *next;
-} list_t;
-
-size_t print_list(const list_t *h);
-size_t list_len(const list_t *h);
-list_t *add_node(list_t **head, const char *str);
-list_t *add_node_end(list_t **head, const char *str);
-void free_list(list_t *head);
-
-/**
- * struct dlistint_s - doubly linked list
+ * struct dlistint_s - doubly linked list node
  * @n: integer
  * @prev: points to the previous node
  * @next: points to the next node
@@ -40,10 +19,19 @@ typedef struct dlistint_s
 	struct dlistint_s *next;
 } dlistint_t;
 
+/* Task 0: print_dlistint */
 size_t print_dlistint(const dlistint_t *h);
+
+/* Task 1: dlistint_len */
 size_t dlistint_len(const dlistint_t *h);
+
+/* Task 2: add_dnodeint */
 dlistint_t *add_dnodeint(dlistint_t **head, const int n);
+
+/* Task 3: add_dnodeint_end */
 dlistint_t *add_dnodeint_end(dlistint_t **head, const int n);
+
+/* Task 4: free_dlistint */
 void free_dlistint(dlistint_t *head);
 
 #endif /* LISTS_H */
