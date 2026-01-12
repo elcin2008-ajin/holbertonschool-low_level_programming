@@ -19,19 +19,19 @@ typedef struct dlistint_s
 	struct dlistint_s *next;
 } dlistint_t;
 
-/* Task 0: print_dlistint */
+/* Task 0: Print all elements of a doubly linked list */
 size_t print_dlistint(const dlistint_t *h);
 
-/* Task 1: dlistint_len */
+/* Task 1: Return the number of elements in a doubly linked list */
 size_t dlistint_len(const dlistint_t *h);
 
-/* Task 2: add_dnodeint */
+/* Task 2: Add a new node at the beginning of a doubly linked list */
 dlistint_t *add_dnodeint(dlistint_t **head, const int n);
 
-/* Task 3: add_dnodeint_end */
+/* Task 3: Add a new node at the end of a doubly linked list */
 dlistint_t *add_dnodeint_end(dlistint_t **head, const int n);
 
-/* Task 4: free_dlistint */
+/* Task 4: Free a doubly linked list */
 void free_dlistint(dlistint_t *head);
 
 #endif /* LISTS_H */
