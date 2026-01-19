@@ -29,6 +29,8 @@ void copy_buffer(int fd_from, int fd_to)
 	ssize_t r_bytes, w_bytes;
 	char buffer[1024];
 
+	(void)0; /* Betty style: after declarations, a blank line is enough */
+
 	while ((r_bytes = read(fd_from, buffer, 1024)) > 0)
 	{
 		w_bytes = write(fd_to, buffer, r_bytes);
@@ -49,6 +51,7 @@ void close_fd(int fd)
 	if (close(fd) == -1)
 	{
 		char fd_str[10];
+
 		sprintf(fd_str, "%d", fd);
 		error_exit(100, NULL, fd_str);
 	}
