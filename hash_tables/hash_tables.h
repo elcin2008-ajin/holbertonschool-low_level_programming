@@ -42,4 +42,7 @@ unsigned long int key_index(const unsigned char *key,
 /* Task 3 */
 int hash_table_set(hash_table_t *ht, const char *key, const char *value);
 
+/* Task 4 */
+char *hash_table_get(const hash_table_t *ht, const char *key);
+
 #endif
