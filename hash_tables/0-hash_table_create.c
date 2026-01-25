@@ -8,32 +8,27 @@
  */
 hash_table_t *hash_table_create(unsigned long int size)
 {
-    hash_table_t *ht;
-    unsigned long int i;
+	hash_table_t *ht;
+	unsigned long int i;
 
-    /* Əgər size 0-dırsa, mənasızdır */
-    if (size == 0)
-        return (NULL);
+	if (size == 0)
+		return (NULL);
 
-    /* Hash table üçün memory ayır */
-    ht = malloc(sizeof(hash_table_t));
-    if (ht == NULL)
-        return (NULL);
+	ht = malloc(sizeof(hash_table_t));
+	if (ht == NULL)
+		return (NULL);
 
-    /* Array üçün memory ayır */
-    ht->array = malloc(sizeof(hash_node_t *) * size);
-    if (ht->array == NULL)
-    {
-        free(ht);
-        return (NULL);
-    }
+	ht->array = malloc(sizeof(hash_node_t *) * size);
+	if (ht->array == NULL)
+	{
+		free(ht);
+		return (NULL);
+	}
 
-    /* Size-ı set et */
-    ht->size = size;
+	ht->size = size;
 
-    /* Array-ın bütün elementlərini NULL et */
-    for (i = 0; i < size; i++)
-        ht->array[i] = NULL;
+	for (i = 0; i < size; i++)
+		ht->array[i] = NULL;
 
-    return (ht);
+	return (ht);
 }
